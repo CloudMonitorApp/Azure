@@ -1,0 +1,20 @@
+{
+    "name": "cloudmonitor/azure",
+    "description": "Authenticate users against Azure AD",
+    "require": {
+        "laravel/socialite": "^5.5",
+        "php": "^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cloudmonitor\\Azure\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emil Moe",
+            "email": "contact@cloudmonitor.dk"
+        }
+    ]
+}
