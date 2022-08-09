@@ -35,4 +35,8 @@ return [
     */
 
     'redirect' => '/',
+
+    'routes' => [
+        'prefix' => 'auth',
+    ],
 ];

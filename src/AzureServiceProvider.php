@@ -14,7 +14,7 @@ class AzureServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/config.php', 'azure_ad');
+        $this->mergeConfigFrom(__DIR__.'/config.php', 'azure-ad');
     }
 
     /**
@@ -31,8 +31,8 @@ class AzureServiceProvider extends ServiceProvider
                 return $socialite->buildProvider(
                     AzureAD::class,
                     [
-                        'client_id' => config('azure_ad.client_id'),
-                        'client_secret' => config('azure_ad.secret'),
+                        'client_id' => config('azure-ad.client_id'),
+                        'client_secret' => config('azure-ad.secret'),
                         'redirect' => str_replace('http:', 'https:', request()->root()) .'/auth/signin',
                     ]
                 );

@@ -35,7 +35,7 @@ class Azure extends AbstractProvider implements ProviderInterface
      */
     protected function getAuthUrl(string $state): string
     {
-        return $this->buildAuthUrlFromBase('https://login.microsoftonline.com/'. config('azure_ad.tenant') .'/oauth2/v2.0/authorize', $state);
+        return $this->buildAuthUrlFromBase('https://login.microsoftonline.com/'. config('azure-ad.tenant') .'/oauth2/v2.0/authorize', $state);
     }
 
     /**
@@ -45,7 +45,7 @@ class Azure extends AbstractProvider implements ProviderInterface
      */
     protected function getTokenUrl(): string
     {
-        return 'https://login.microsoftonline.com/'. config('azure_ad.tenant') .'/oauth2/v2.0/token';
+        return 'https://login.microsoftonline.com/'. config('azure-ad.tenant') .'/oauth2/v2.0/token';
     }
 
     /**
